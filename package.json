@@ -4,7 +4,7 @@
   "description": "The eBook project allows users to register, log in, and log out, while admins can upload PDFs to AWS S3 with metadata and manage eBooks (view/delete) and users (ban/change roles) through a dashboard. Users can search, filter, read, or download eBooks for offline use.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --runInBand",
     "start": "nodemon app.js"
   },
   "author": "Naji-Assi",
@@ -18,10 +18,12 @@
     "crypto": "^1.0.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "jest": "^29.7.0",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.12.0",
     "mongoose": "^8.9.5",
     "multer": "^1.4.5-lts.1",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
   }
 }
