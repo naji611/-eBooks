@@ -14,7 +14,7 @@ router.post(
   ]),
   booksControllers.addBook
 );
-router.get("/allBooks", isAuth, booksControllers.getBooks);
+router.get("/allBooks", booksControllers.getBooks);
 router.get("/:id", isAuth, booksControllers.getBookById);
 router.delete("/:id", isAuth, booksControllers.deleteBook);
 router.get("/addToFav/:bookId", isAuth, booksControllers.addToFavorite);
